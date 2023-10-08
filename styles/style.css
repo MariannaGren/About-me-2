@@ -1,0 +1,188 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 20px;
+}
+
+body {
+    text-align: center;
+    font-family: 'Source Serif 4', Arial, sans-serif;
+    font-style: normal;
+    font-weight: 300;
+}
+
+h1 {
+    text-transform: uppercase;
+    max-width: 500px;
+    margin: 0 auto 50px;
+    font-size: 4.25rem;
+}
+
+.title {
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: 45px;
+}
+
+a {
+    color: #FFF;
+    text-decoration: none;
+}
+
+section {
+    padding: 100px 0;
+}
+
+.description {
+    font-size: 1.25rem;
+    font-weight: 400;
+}
+
+.background {
+    background-image: url("../images/my-photo.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: rgba(0, 0, 0, 0.48);
+}
+
+.header {
+    color: #FFF;
+    font-weight: 400;
+    background-color: rgba(0, 0, 0, 0.42);
+    padding: 50px 0;
+}
+
+.menu {
+    margin: 0 auto;
+}
+
+.menu__link {
+    font-size: 1.1rem;
+}
+
+.menu__link:not(:last-child) {
+    margin-right: 25px;
+}
+
+.menu__link:not(:last-child)::after {
+    content: "";
+    width: 1.5px;
+    height: 16px;
+    background-color: #D8D5D5;
+    display: inline-block;
+    margin-left: 25px;
+}
+
+.menu__link:hover {
+    color: #00DD00;
+}
+
+.banner {
+    padding: 218px 0 185px;
+    color: #FFF;
+}
+
+.button {
+    color: #FFF;
+    margin: 0 auto;
+    display: block;
+    width: 312px;
+    height: 60px;
+    line-height: 60px;
+    font-weight: 600;
+    border-radius: 30px;
+    transition: all 0.5s linear;
+    border: 2px solid #FFF;
+}
+
+.button:hover {
+    background: #FFF;
+    color: #000;
+    border: none;
+}
+
+.about-me {
+    background-color: #F3F7EA;
+}
+
+.about-me__description {
+    font-size: 1.5rem;
+    max-width: 1500px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.hobbies {
+    padding: 100px 0;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+}
+
+.column {
+    max-width: 360px;
+    width: calc((100% - 96px) / 3);
+    text-align: left;
+    position: relative;
+}
+
+.column:not(:last-of-type) {
+    margin-right: 48px;
+}
+
+.item-title {
+    margin-top: 10px;
+    font-size: 1.2rem;
+    font-weight: 400;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.contacts {
+    background-color: #262626;
+    padding: 100px 0;
+}
+
+.contacts__caption {
+    font-size: 1.8rem;
+    color: #FFF;
+    max-width: 800px;
+    margin: 0 auto 45px;
+    font-weight: 400;
+}
+
+.social-network {
+    display: flex;
+    justify-content: center;
+}
+
+.social-network__item {
+    font-size: 1.7rem;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    border-radius: 50%;
+    color: #262626;
+    background-color: #FFF;
+    text-align: center;
+    transition: 0.5s;
+}
+
+.social-network__item:not(:last-of-type) {
+    margin-right: 40px;
+}
+
+.social-network__item:hover {
+    transform: scale(1.3);
+}
